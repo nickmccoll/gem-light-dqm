@@ -8,8 +8,8 @@ ROOTCFLAGS=$(shell root-config --cflags)
 ROOTLIBS  =$(shell root-config --libs) 
 ROOTGLIBS =$(shell root-config --glibs) 
 ROOTINC   =$(shell root-config --incdir)
-
-CC=g++-4.9.3
+CC=g++
+#CC=g++-4.9.3
 CCFLAGS=-O2 -Wall -fPIC ${ROOTCFLAGS}
 ADDFLAGS=-g -std=c++0x
 RC=rootcint
